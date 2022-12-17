@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWEETS</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="..\images\téléchargement.jfif" >
+   
+</head>
+<body>
+    
+  <header>
+      <nav class="header">
+          <img class="logo" src="C:\Users\zeineb nsiri\Desktop\PROJECTµ\images\téléchargement (1).jfif" alt="SoSweet">
+          <div class="headermenu">
+              <ul>
+                  <li><a class="active" href="#">Shop</a></li>
+                  <li><a href="#">recipes</a></li>
+                  <li><a href="#">Login</a></li>       
+              </ul>
+          </div>
+      </nav>
+  </header>
+
+
+  <div class="recipes">
+      <h1 class="recipes-introduction">We've rounded up our highest-rated recipes
+            <br> of all time!</h1>
+      <h1>SWEETS</h1>
+
+  </div>
+
+  <section class="food">
+      
+      <div class="container">
+          <img src="../images/téléchargement (2).jfif" alt="Avatar" class="image">
+          <div class="overlay">
+              <div class="text">
+                  <ul>
+                      
+                      <li> Whisk the flour and eggs.</li>
+                      <li> Gradually add the milk and water.</li>
+                      <li> Scoop the batter onto a hot griddle.</li>
+                      <li> Cook until lightly browned on the bottom.</li>
+                      <li> Flip and continue cooking until done on both sides.</li>
+                  </ul>
+                  
+              </div>
+          </div>
+      </div>
+
+      <div class="container">
+          <img src="../images/téléchargement (3).jfif" alt="Avatar" class="image">
+          <div class="overlay">
+              <div class="text">
+                  <ul>
+                      <li>Sift flour, baking powder, sugar, and salt together in a large bowl. Make a well in the center and add milk, melted butter, and egg; mix until smooth.</li>
+                      <li>Heat a lightly oiled griddle 3. Scoop the batter onto a hot griddle.</li>
+                      <li>Flip and cook until browned on the other side. </li>
+                      <li> browned on the bottom.</li>
+                      <li> Repeat with remaining batter.</li>
+                  </ul>
+                  
+              </div>
+          </div>
+      </div>
+
+      <div class="container">
+          <img src="../images/téléchargement (4).jfif" alt="Avatar" class="image">
+          <div class="overlay">
+              <div class="text">
+                  <ul>
+                      <li>Combine water, 2 1/2 tablespoons sugar, salt, and 2 tablespoons vegetable oil in a small saucepan and place over medium heat. stirring .</li>
+                      <li>Heat oil for frying in a deep fryer or deep pot to 375 degrees F (190 degrees C).</li>
+                      <li>Transfer the dough to a sturdy pastry bag fitted with a medium star tip.-inch strips of dough into the hot oil</li>
+                      <li>Combine 1/2 cup sugar and cinnamon. Roll drained churros in cinnamon and sugar mixture.</li>
+                      
+                  </ul>
+                  
+              </div>
+          </div>
+      </div>
+
+      <div class="container">
+          <img src="..\images\téléchargement (5).jfif" alt="Avatar" class="image">
+          <div class="overlay">
+              <div class="text">
+                  <ul>
+                      <li>Preheat the oven to 350 degrees F (175 degrees C). Grease 2 ramekins and set aside.</li>
+                      <li>Combine chocolate chips and butter in a microwave-safe bowl. Microwave on high for 30 seconds.</li>
+                      <li>Combine sugar, egg, vanilla extract, and salt in a separate bowl. Pour into chocolate mixture and whisk until combined. Add flour, stirring until combined.</li>
+                      <li>Bake in the preheated oven until set, 12 to 14 minutes.</li>
+                      
+                  </ul>
+                  
+              </div>
+          </div>
+      </div>
+
+
+
+  </section>
+        
+
+  <h1>OUR HOME MADE CAKES ; LOGIN TO SEE THE RECIPIES</h1>
+
+  <section class="carousel">
+
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="..\images\4-ingredient-white-cake-2000-40777b0562a642728c52e0474ab28e4e.webp" style="width:100%">
+        <div class="text">Four Ingredient White Cake</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="..\images\chocolate-chestnut-cake-ddmfs-3x4-0378-8448ebfc109848be9d919b79a4fabccd.webp" style="width:100%">
+        <div class="text">Chocolate Chestnut Cake</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="..\images\image.webp" style="width:100%">
+        <div class="text">Mom's Rum Cake</div>
+      </div>
+      
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+      
+    </div>
+      <br>
+      
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+    
+    <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+
+  </section>
+
+  <h3>FILL IN THE FORM TO RECEIVE MORE RECIPES</h3>
+
+  <div class="zeineb">
+    <form  name="form1" onsubmit="return required(event) ">
+      <label for="fname"> Name and last name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name and last name..">
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"  placeholder="Your phone number [0-9]{3}-[0-9]{2}-[0-9]{3} ">
+
+      <label for="email">E-mail</label>
+      <input type="email" id="email" name="email" placeholder="Your email..">
+
+      <label for="country">Country</label>
+      <select id="country" name="country">
+        <option value="australia">Tunisia</option>
+        <option value="canada">Spain</option>
+        <option value="usa">Poland</option>
+        <option value="usa">Italy</option>
+        <option value="usa">Turkey</option>
+      </select>
+    
+      <input type="submit" value="Submit" id="btn">
+
+    </form>
+
+  </div>
+
+  <footer >
+      <p>
+        We exist in 5 countries:
+        <a href="########">Tunisia,</a>
+        <a href="########">Poland,</a>
+        <a href="########">Turkey,</a>
+        <a href="########">Spain,</a>
+        <a href="########">Italy</a>
+        
+      </p> 
+      <p>
+      This site uses cookies to deliver services in accordance with this Privacy Policy. You can specify the conditions for storing or accessing cookies on your browser.
+    
+      </p>
+  </footer>
+  <script>
+    function required(event)
+    {
+      event.preventDefault();
+    var empt = document.form1.firstname.value;
+    var empt2 = document.form1.email.value;
+    var empt3 = document.form1.phone.value;
+    var empt4 = document.form1.country;
+    if ((empt === "")||(empt2 === "") || (empt3 === "")|| (empt4 === ""))
+    {
+
+    alert("Please input a Value");
+    return false;
+    }
+    else 
+    {
+    alert('Code has accepted : you can try another');
+    return true; 
+    }
+    }
+    
+  </script>
+
+</body>
+</html>
